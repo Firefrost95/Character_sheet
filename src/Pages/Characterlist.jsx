@@ -1,15 +1,13 @@
 import React from "react";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "../api/base44Client";
 import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Card, CardContent, CardHeader } from "../components/ui/card";
 import { Plus, Swords, User, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function CharacterList() {
-  const { data: characters, isLoading } = useQuery({
+export default function CharacterList({ onSelectCharacter }) {
+  const { data: characters = [], isLoading } = useQuery({
     queryKey: ['characters'],
     queryFn: () => base44.entities.Character.list('-updated_date'),
     initialData: [],
@@ -40,12 +38,10 @@ export default function CharacterList() {
             </h1>
             <p className="text-slate-400 text-lg">Manage your heroes and legends</p>
           </div>
-          <Link to={createPageUrl("CharacterSheet")}>
-            <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold px-6 py-6 text-lg shadow-lg">
+            <Button onClick={() => onSelectCharacter(null)} className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold px-6 py-6 text-lg shadow-lg">
               <Plus className="w-5 h-5 mr-2" />
               New Character
             </Button>
-          </Link>
         </div>
 
         {/* Character Grid */}

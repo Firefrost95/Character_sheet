@@ -1,28 +1,24 @@
 
 import React, { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "../api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "../components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { ArrowLeft, Download, Loader2 } from "lucide-react";
-import { toast } from "sonner";
 
-import CharacterBasics from "../Components/character/CharacterBasics.jsx/index.js";
-import StatsSection from "../Components/character/StatsSection.jsx/index.js";
+import CharacterBasics from "../Components/character/CharacterBasics.jsx";
+import StatsSection from "../Components/character/StatsSection.jsx";
 import SkillsSection from "../Components/character/SkillsSection.jsx";
-import PowersSection from "../components/character/PowersSection";
-import EquipmentSection from "../components/character/EquipmentSection";
-import HealthSection from "../components/character/HealthSection";
-import CompanionsSection from "../components/character/CompanionsSection";
-import RenownSection from "../components/character/RenownSection";
+import PowerSection from "../Components/character/PowerSection.jsx";
+import EquipmentSection from "../Components/character/EquipmentSection.jsx";
+import HealthSection from "../Components/character/HealthSection.jsx";
+import CompanionsSection from "../Components/character/CompanionsSection.jsx";
+import RenownSection from "../Components/character/RenownSection.jsx";
+import SparkSection from "../Components/character/SparkSection.jsx";
+import MagicSection from "../Components/character/MagicSection.jsx";
 
-export default function CharacterSheet() {
-  const navigate = useNavigate();
+export default function CharacterSheet({ character: initialCharacter, onBack }) {
   const queryClient = useQueryClient();
-  const urlParams = new URLSearchParams(window.location.search);
-  const characterId = urlParams.get('id');
 
   const [character, setCharacter] = useState({
     name: "",

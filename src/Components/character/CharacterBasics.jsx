@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
+import { base44 } from "../../api/base44Client";
+import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
+import { Textarea } from "../../components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select";
+import { Button } from "../../components/ui/button";
 import { Upload, Loader2, User, Plus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "../../components/ui/checkbox";
 
 const MASS_TIERS = ["Feather", "Airy", "Light", "Solid", "Heavy", "Dramatic", "Absurd"];
 const LEVELS = ["Low", "Mid", "High"];
