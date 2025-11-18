@@ -182,7 +182,7 @@ export default function SkillsSection({ character, setCharacter }) {
   return (
     <div className="space-y-6">
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100">Skills</CardTitle>
           <Button
             onClick={addSkill}

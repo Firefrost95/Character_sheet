@@ -85,7 +85,7 @@ export default function PowersSection({ character, setCharacter }) {
       <TabsContent value="powers">
         <div className="space-y-6">
           <Card className="bg-slate-800/50 border-slate-700">
-            <CardHeader className="flex flex-row items-center justify-between">
+            <CardHeader className="flex items-center justify-between p-6">
               <CardTitle className="text-amber-100">Powers & Abilities</CardTitle>
               <Button
                 onClick={addPower}

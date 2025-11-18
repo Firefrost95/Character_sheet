@@ -152,7 +152,7 @@ export default function EquipmentSection({ character, setCharacter }) {
 
       {/* Weapons */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Sword className="w-5 h-5" />
             Weapons
@@ -287,7 +287,7 @@ export default function EquipmentSection({ character, setCharacter }) {
 
       {/* Armor */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Shield className="w-5 h-5" />
             Armor & Protection
@@ -411,7 +411,7 @@ export default function EquipmentSection({ character, setCharacter }) {
 
       {/* Miscellaneous */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Package className="w-5 h-5" />
             Miscellaneous Gear

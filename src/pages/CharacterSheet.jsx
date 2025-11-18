@@ -163,7 +163,7 @@ export default function CharacterSheet() {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 self-end md:self-auto">
             <Button
               onClick={handleSave}
               className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 font-semibold"

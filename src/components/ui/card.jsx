@@ -9,9 +9,11 @@ export const Card = React.forwardRef(({ className = '', ...props }, ref) => (
 ))
 Card.displayName = 'Card'
 
-export const CardHeader = React.forwardRef(({ className = '', ...props }, ref) => (
-  <div ref={ref} className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props} />
-))
+export const CardHeader = React.forwardRef(({ className, ...props }, ref) => {
+  const defaultClass = 'flex flex-col space-y-1.5 p-6'
+  const classes = className && className.length > 0 ? className : defaultClass
+  return <div ref={ref} className={classes} {...props} />
+})
 CardHeader.displayName = 'CardHeader'
 
 export const CardTitle = React.forwardRef(({ className = '', ...props }, ref) => (

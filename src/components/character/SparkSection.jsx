@@ -127,7 +127,7 @@ export default function SparkSection({ character, setCharacter }) {
 
       {/* Components */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Cpu className="w-5 h-5" />
             Components
@@ -199,7 +199,7 @@ export default function SparkSection({ character, setCharacter }) {
 
       {/* Inventions */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Wrench className="w-5 h-5" />
             Inventions (Projects)

@@ -223,7 +223,7 @@ export default function HealthSection({ character, setCharacter }) {
 
       {/* Injuries (3 Boxes) */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <AlertTriangle className="w-5 h-5" />
             Injuries (3 Boxes Total)
@@ -374,7 +374,7 @@ export default function HealthSection({ character, setCharacter }) {
 
       {/* Status Effects */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <CardTitle className="text-amber-100 flex items-center gap-2">
             <Activity className="w-5 h-5" />
             Status Effects

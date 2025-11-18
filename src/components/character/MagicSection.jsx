@@ -384,7 +384,7 @@ export default function MagicSection({ character, setCharacter }) {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700">
-              <CardHeader className="flex flex-row items-center justify-between">
+              <CardHeader className="flex items-center justify-between p-6">
                 <CardTitle className="text-amber-100">Magic Schools</CardTitle>
                 <Button onClick={addSchool} className="bg-amber-600 hover:bg-amber-700" size="sm">
                   <Plus className="w-4 h-4 mr-2" />
@@ -662,7 +662,7 @@ export default function MagicSection({ character, setCharacter }) {
 
           <TabsContent value="spells" className="space-y-6">
             <Card className="bg-slate-800/50 border-slate-700">
-              <CardHeader className="flex flex-row items-center justify-between">
+              <CardHeader className="flex items-center justify-between p-6">
                 <CardTitle className="text-amber-100">Spell List</CardTitle>
                 <Button onClick={addSpell} className="bg-amber-600 hover:bg-amber-700" size="sm">
                   <Plus className="w-4 h-4 mr-2" />
@@ -1059,7 +1059,7 @@ export default function MagicSection({ character, setCharacter }) {
           </Card>
 
           <Card className="bg-slate-800/50 border-slate-700">
-            <CardHeader className="flex flex-row items-center justify-between">
+            <CardHeader className="flex items-center justify-between p-6">
               <CardTitle className="text-amber-100">Meta Magic Spells</CardTitle>
               <Button onClick={addSpell} className="bg-amber-600 hover:bg-amber-700" size="sm">
                 <Plus className="w-4 h-4 mr-2" />
@@ -1259,7 +1259,7 @@ export default function MagicSection({ character, setCharacter }) {
           </Card>
 
           <Card className="bg-slate-800/50 border-slate-700">
-            <CardHeader className="flex flex-row items-center justify-between">
+            <CardHeader className="flex items-center justify-between p-6">
               <CardTitle className="text-amber-100">Ki Techniques</CardTitle>
               <Button
                 onClick={() => {
@@ -1448,7 +1448,7 @@ export default function MagicSection({ character, setCharacter }) {
           </Card>
 
           <Card className="bg-slate-800/50 border-slate-700">
-            <CardHeader className="flex flex-row items-center justify-between">
+            <CardHeader className="flex items-center justify-between p-6">
               <div>
                 <CardTitle className="text-amber-100">Lies</CardTitle>
                 <p className="text-sm text-slate-400 mt-1">
@@ -1614,7 +1614,7 @@ export default function MagicSection({ character, setCharacter }) {
 
             <TabsContent value="blessings" className="space-y-6">
               <Card className="bg-slate-800/50 border-slate-700">
-                <CardHeader className="flex flex-row items-center justify-between">
+                <CardHeader className="flex items-center justify-between p-6">
                   <CardTitle className="text-amber-100">Dedications (True Blessings)</CardTitle>
                   <Button
                     onClick={() => {
@@ -1715,7 +1715,7 @@ export default function MagicSection({ character, setCharacter }) {
               </Card>
 
               <Card className="bg-slate-800/50 border-slate-700">
-                <CardHeader className="flex flex-row items-center justify-between">
+                <CardHeader className="flex items-center justify-between p-6">
                   <CardTitle className="text-amber-100">Markings</CardTitle>
                   <Button
                     onClick={() => {
@@ -1801,7 +1801,7 @@ export default function MagicSection({ character, setCharacter }) {
 
             <TabsContent value="constructs" className="space-y-6">
               <Card className="bg-slate-800/50 border-slate-700">
-                <CardHeader className="flex flex-row items-center justify-between">
+                <CardHeader className="flex items-center justify-between p-6">
                   <CardTitle className="text-amber-100">Elemental Constructs</CardTitle>
                   <Button
                     onClick={() => {
@@ -1920,7 +1920,7 @@ export default function MagicSection({ character, setCharacter }) {
 
             <TabsContent value="wrath" className="space-y-6">
               <Card className="bg-slate-800/50 border-slate-700">
-                <CardHeader className="flex flex-row items-center justify-between">
+                <CardHeader className="flex items-center justify-between p-6">
                   <CardTitle className="text-amber-100">Wrath Abilities</CardTitle>
                   <Button
                     onClick={() => {

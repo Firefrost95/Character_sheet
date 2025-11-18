@@ -708,7 +708,7 @@ export default function CharacterBasics({ character, setCharacter }) {
 
       {/* Custom Traits */}
       <Card className="bg-slate-800/50 border-slate-700">
-        <CardHeader className="flex flex-row items-center justify-between">
+  <CardHeader className="flex items-center justify-between p-6">
           <div>
             <CardTitle className="text-amber-100">Custom Traits</CardTitle>
             <p className="text-sm text-slate-400 mt-1">Additional character-specific traits and quirks</p>
