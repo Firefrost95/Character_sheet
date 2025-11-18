@@ -46,7 +46,7 @@ export default function CharacterList() {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-4xl font-bold text-amber-100 mb-2 flex items-center gap-3">
-              <Swords className="w-10 h-10 text-amber-400" />
+              <Swords className="w-10 h-10 text-amber-400 pt-1" />
               Torchdice Character Vault
             </h1>
             <p className="text-slate-400 text-lg">Manage your heroes and legends</p>
@@ -101,7 +101,7 @@ export default function CharacterList() {
         {/* Character Grid */}
         {characters.length === 0 ? (
           <Card className="bg-slate-800/50 border-slate-700 border-2 border-dashed">
-            <CardContent className="flex flex-col items-center justify-center py-20">
+            <CardContent className="flex flex-col items-center justify-center pt-24 pb-20">
               <Sparkles className="w-16 h-16 text-slate-600 mb-4" />
               <h3 className="text-2xl font-semibold text-slate-400 mb-2">No Characters Yet</h3>
               <p className="text-slate-500 mb-6">Create your first hero to begin your adventure</p>
